@@ -1,0 +1,72 @@
+/* Vars:
+   ========================================================================== */
+
+// Font
+$mainFont                : 'SBSansText-regular', Helvetica, Arial, sans-serif;
+$titleFont               : 'SBSansDisplay-regular', Helvetica, Arial, sans-serif;
+$titleCircle             : 'Circe-Regular', Helvetica, Arial, sans-serif;
+ 
+// Size
+$mainFontSize            : 14px;
+$h1FontSize              : 52px;
+$h2FontSize              : 22px;
+$subTitleSize            : 16px;
+// $mainFontWeight          : 400;
+// $mainLineHeight          : 1.4;
+
+// $largeDesktopWidth       : 1600px;
+$desktopWidth            : 1400px;
+// $smDesktopWidth          : 1024px;
+$tableWidth              : 768px;
+// $smTableWidth            : 640px;
+// $phoneWidth              : 480px; 
+$smPhoneWidth            : 320px; 
+// $mainContainer           : 1164px; 
+
+
+// Font color
+$mainFont-color          : #222222;
+$subTitle-color          : #464646;
+$lightFont-color         : #6C6C6C;
+// Main color
+$default-color           : #ffffff; 
+$default-color-dark      : #000000;
+$success-color           : #00A523;
+$background-color        : #E5E5E5;
+// Border Color
+$border-base              : #DEDEDE;
+
+
+/*
+   px to vw convertor
+*/
+
+$vw-viewport19000: 1800;
+$vw-enable: true;
+@function get-vw($font) {
+  @if $vw-enable {
+    $vw-context: $vw-viewport19000 * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+  }
+@return $font;
+}
+
+$vw-viewport14000: 1400;
+$vw-enable: true;
+@function get-vw14($font) {
+  @if $vw-enable {
+    $vw-context: $vw-viewport14000 * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+  }
+@return $font;
+}
+
+$vw-viewport1230: 1230;
+$vw-enable: true;
+@function get-vw1230($font) {
+  @if $vw-enable {
+    $vw-context: $vw-viewport1230 * 0.01 * 1px;
+    @return $font / $vw-context * 1vw;
+  }
+@return $font;
+}
