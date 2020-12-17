@@ -1,12 +1,18 @@
-@import '../scss/variables.scss';
-@import '../scss/fonts.scss';
+@import "../scss/variables.scss";
+@import "../scss/fonts.scss";
 
 .App {
-  text-align: center;
-  color: red;
-  font-family: $mainFont;
-  font-family: 'SBSansText-regular';
+    text-align: center;
+    color: red;
+    font-family: $mainFont;
+    font-family: 'SBSansText-regular';
 
+    .container {
+        max-width: 1552px;
+        margin: 0 24px;
+
+        .wrapper {
+            min-height: calc(100vh - 79px);
+        }
+    }
 }
-
-

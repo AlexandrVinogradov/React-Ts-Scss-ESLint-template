@@ -1,0 +1,48 @@
+@import "../scss/variables.scss";
+@import "../scss/fonts.scss";
+
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 25px;
+
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background: $border-base;
+        top: 0;
+    }
+
+    .company {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        max-width: 405px;
+
+        .logo {}
+
+        .author {
+            color: $lightFont-color;
+        }
+    }
+
+    .connect_with_us {
+        display: flex;
+        align-items: center;
+
+        &__icon {
+            width: 20px;
+            height: 16px;
+        }
+
+        &__title {
+            color: $success-color;
+            padding-left: 10px;
+        }
+    }
+}
