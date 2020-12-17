@@ -1,6 +1,6 @@
 import React from 'react'
-import sberLogo from '../img/sber-logo.png'
-import SVGIcon from '../SVGIcons'
+import sberLogo from '../../img/sber-logo.png'
+import SVGIcon from '../../SVGIcons'
 import s from './Footer.module.scss'
 
 const Footer: React.FC = (props) => {

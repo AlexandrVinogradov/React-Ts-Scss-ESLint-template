@@ -6,6 +6,7 @@ function App() {
   return (
     <div className={s.App}>
       <div className={s.container}>
+        
         <div className={s.wrapper}>Настройка VPN</div>
         <Footer />
       </div>
